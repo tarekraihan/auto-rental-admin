@@ -1,0 +1,246 @@
+
+<!-- START CONTAINER FLUID -->
+<div class="container-fluid container-fixed-lg bg-white">
+    <div class="well notice">
+        <a href=""><i class="fa fa-close pull-right"></i></a>
+        <p><h4><i class="fa fa-info-circle "></i>Cars / Vehicles Inventory</h4>
+        Here you can view all cars/vehicles that you operate. You need to have at least one car added and assigned to a  car type so client can make reservations. Your clients book car type but the system assigns specific car to each reservation. If no car of the selected car type are available for the chosen period then the reservation can't be made. You can always edit the car assigned each reservation manually. To add new car/vehicle please go to the 'Add New Car' menu.  </p>
+
+    </div>
+    <!-- START PANEL -->
+    <div class="panel panel-transparent" ng-controller="TableWithSearchCtrl">
+        <div class="panel-heading">
+            <div class="panel-title">
+                <input type="text" id="search-table" class="form-control" placeholder="Search" ng-keyup="filter($event)">
+            </div>
+            <!--<div class="pull-right">
+                <div class="col-xs-12">
+                    <input type="text" id="search-table" class="form-control pull-right" placeholder="Search" ng-keyup="filter($event)">
+                </div>
+            </div>-->
+            <div class="clearfix"></div>
+        </div>
+        <div class="panel-body">
+            <table class="table table-hover demo-table-search" id="tableWithSearch" ui-jq="dataTable" ui-options="options">
+                <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>Registration No</th>
+                    <th>Make & Model</th>
+                    <th>Default Location</th>
+                    <th>Car Type</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <p>AB 568</p>
+                    </td>
+                    <td class="v-align-middle">
+                        <p>MAZDA 5</p>
+                    </td>
+                    <td class="v-align-middle">
+                        WALTON STREET, LONDON
+                    </td>
+                    <td class="v-align-middle">
+                        <p>LARGE : Station Wagon</p>
+                    </td>
+
+                    <td class="v-align-middle">
+                        <a ui-sref="app.car-inventory.update" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="" class="btn btn-danger"><i class="fa fa-close"></i></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <p>AB 568</p>
+                    </td>
+                    <td class="v-align-middle">
+                        <p>MAZDA 5</p>
+                    </td>
+                    <td class="v-align-middle">
+                        WALTON STREET, LONDON
+                    </td>
+                    <td class="v-align-middle">
+                        <p>LARGE : Station Wagon</p>
+                    </td>
+
+                    <td class="v-align-middle">
+                        <a ui-sref="app.car-inventory.update" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="" class="btn btn-danger"><i class="fa fa-close"></i></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <p>AB 568</p>
+                    </td>
+                    <td class="v-align-middle">
+                        <p>MAZDA 5</p>
+                    </td>
+                    <td class="v-align-middle">
+                        WALTON STREET, LONDON
+                    </td>
+                    <td class="v-align-middle">
+                        <p>LARGE : Station Wagon</p>
+                    </td>
+
+                    <td class="v-align-middle">
+                        <a ui-sref="app.car-inventory.update" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="" class="btn btn-danger"><i class="fa fa-close"></i></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <p>AB 568</p>
+                    </td>
+                    <td class="v-align-middle">
+                        <p>MAZDA 5</p>
+                    </td>
+                    <td class="v-align-middle">
+                        WALTON STREET, LONDON
+                    </td>
+                    <td class="v-align-middle">
+                        <p>LARGE : Station Wagon</p>
+                    </td>
+
+                    <td class="v-align-middle">
+                        <a ui-sref="app.car-inventory.update" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="" class="btn btn-danger"><i class="fa fa-close"></i></a>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <p>AB 568</p>
+                    </td>
+                    <td class="v-align-middle">
+                        <p>MAZDA 5</p>
+                    </td>
+                    <td class="v-align-middle">
+                        WALTON STREET, LONDON
+                    </td>
+                    <td class="v-align-middle">
+                        <p>LARGE : Station Wagon</p>
+                    </td>
+
+                    <td class="v-align-middle">
+                        <a ui-sref="app.car-inventory.update" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="" class="btn btn-danger"><i class="fa fa-close"></i></a>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <p>AB 568</p>
+                    </td>
+                    <td class="v-align-middle">
+                        <p>MAZDA 5</p>
+                    </td>
+                    <td class="v-align-middle">
+                        WALTON STREET, LONDON
+                    </td>
+                    <td class="v-align-middle">
+                        <p>LARGE : Station Wagon</p>
+                    </td>
+
+                    <td class="v-align-middle">
+                        <a ui-sref="app.car-inventory.update" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="" class="btn btn-danger"><i class="fa fa-close"></i></a>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <p>AB 568</p>
+                    </td>
+                    <td class="v-align-middle">
+                        <p>MAZDA 5</p>
+                    </td>
+                    <td class="v-align-middle">
+                        WALTON STREET, LONDON
+                    </td>
+                    <td class="v-align-middle">
+                        <p>LARGE : Station Wagon</p>
+                    </td>
+
+                    <td class="v-align-middle">
+                        <a ui-sref="app.car-inventory.update" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="" class="btn btn-danger"><i class="fa fa-close"></i></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <p>AB 568</p>
+                    </td>
+                    <td class="v-align-middle">
+                        <p>MAZDA 5</p>
+                    </td>
+                    <td class="v-align-middle">
+                        WALTON STREET, LONDON
+                    </td>
+                    <td class="v-align-middle">
+                        <p>LARGE : Station Wagon</p>
+                    </td>
+
+                    <td class="v-align-middle">
+                        <a ui-sref="app.car-inventory.update" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="" class="btn btn-danger"><i class="fa fa-close"></i></a>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- END PANEL -->
+</div>
+<!-- END CONTAINER FLUID -->

@@ -1,0 +1,167 @@
+<!-- START CONTAINER FLUID -->
+<div class="container-fluid container-fixed-lg bg-white">
+    <div class="well notice">
+        <a href=""><i class="fa fa-close pull-right"></i></a>
+        <p><h4><i class="fa fa-info-circle "></i>Car Types</h4>
+        Your client view and reserves car types, not specific vehicles and the system assign automatically a vehicle / car from the chosen car type to each reservation made. You can manage cars/vehicles under car inventory menu and assign them to different car types.</p>
+
+    </div>
+    <!-- START PANEL -->
+    <div class="panel panel-transparent" ng-controller="TableWithSearchCtrl">
+        <div class="panel-heading">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <input type="text" id="search-table" class="form-control" placeholder="Search" ng-keyup="filter($event)">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="panel-body">
+            <table class="table table-hover demo-table-search" id="tableWithSearch" ui-jq="dataTable" ui-options="options">
+                <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>Image</th>
+                    <th>Type</th>
+                    <th>Car Models</th>
+                    <th>No of Cars</th>
+                    <th>Status</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <img class="car-img" src="assets/img/car/i8.png" title="BMW i8" />
+                    </td>
+                    <td class="v-align-middle">Large : Premium</td>
+                    <td class="v-align-middle">
+                        BMW i8
+                    </td>
+                    <td class="v-align-middle">
+                       <p>2</p>
+                    </td>
+                    <td class="v-align-middle">
+                        <a href="" class="btn btn-success">Active</a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="app.types-rates.update" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="" class="btn btn-danger"><i class="fa fa-close"></i></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <img class="car-img" src="assets/img/car/i8.png" title="BMW i8" />
+                    </td>
+                    <td class="v-align-middle">Large : Premium</td>
+                    <td class="v-align-middle">
+                        BMW i8
+                    </td>
+                    <td class="v-align-middle">
+                        <p>2</p>
+                    </td>
+                    <td class="v-align-middle">
+                        <a href="" class="btn btn-success">Active</a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="app.types-rates.update" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="" class="btn btn-danger"><i class="fa fa-close"></i></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <img class="car-img" src="assets/img/car/i8.png" title="BMW i8" />
+                    </td>
+                    <td class="v-align-middle">Large : Premium</td>
+                    <td class="v-align-middle">
+                        BMW i8
+                    </td>
+                    <td class="v-align-middle">
+                        <p>2</p>
+                    </td>
+                    <td class="v-align-middle">
+                        <a href="" class="btn btn-success">Active</a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="app.types-rates.update" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="" class="btn btn-danger"><i class="fa fa-close"></i></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <img class="car-img" src="assets/img/car/i8.png" title="BMW i8" />
+                    </td>
+                    <td class="v-align-middle">Large : Premium</td>
+                    <td class="v-align-middle">
+                        BMW i8
+                    </td>
+                    <td class="v-align-middle">
+                        <p>2</p>
+                    </td>
+                    <td class="v-align-middle">
+                        <a href="" class="btn btn-success">Active</a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="app.types-rates.update" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="" class="btn btn-danger"><i class="fa fa-close"></i></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <img class="car-img" src="assets/img/car/i8.png" title="BMW i8" />
+                    </td>
+                    <td class="v-align-middle">Large : Premium</td>
+                    <td class="v-align-middle">
+                        BMW i8
+                    </td>
+                    <td class="v-align-middle">
+                        <p>2</p>
+                    </td>
+                    <td class="v-align-middle">
+                        <a href="" class="btn btn-warning">Inactive</a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="app.types-rates.update" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="" class="btn btn-danger"><i class="fa fa-close"></i></a>
+                    </td>
+                </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- END PANEL -->
+</div>
+<!-- END CONTAINER FLUID -->

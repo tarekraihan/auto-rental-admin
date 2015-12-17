@@ -1,0 +1,19 @@
+/*
+
+* Override Pages default styles or create your own styles here
+
+*/
+.demo-table-search thead th:nth-child(1) {
+     width: 2%;
+}
+
+.demo-table-search thead th:nth-child(4) {
+    width: 30%;
+}
+.table>thead:first-child>tr:first-child>th {
+     border-top: 2px solid lightgray;
+}
+.car-img{
+    width:150px;
+    height: auto;
+}

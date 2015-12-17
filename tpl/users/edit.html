@@ -1,0 +1,89 @@
+<!-- START CONTAINER FLUID -->
+<div class="container-fluid container-fixed-lg">
+    <div class="well notice">
+        <a href=""><i class="fa fa-close pull-right"></i></a>
+        <p><h4><i class="fa fa-info-circle "></i>Update User</h4>
+        Review and Update user data. 'Editors' have limited access to the System back-end. They can only view Reservation menu.</p>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <!-- START PANEL -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        Add New User
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <!-- <h5>
+                         Pages default style
+                     </h5>-->
+                    <form class="" role="form">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div pg-form-group class="form-group form-group-default required">
+                                    <label>User Role</label>
+                                    <select  class="form-control">
+                                        <option value="">Select Role</option>
+                                        <option value="super-admin">Super Admin</option>
+                                        <option value="admin">Admin</option>
+                                        <option value="editor">Editor</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div pg-form-group class="form-group form-group-default required">
+                                    <label>Email Address</label>
+                                    <input type="email" class="form-control" placeholder="ex: some@example.com">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div pg-form-group class="form-group form-group-default required ">
+                            <label>Full Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div pg-form-group class="form-group form-group-default required">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control" required placeholder="*********">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div pg-form-group class="form-group form-group-default required">
+                                    <label>ReType Password</label>
+                                    <input type="password" class="form-control" required placeholder="*********">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div pg-form-group class="form-group form-group-default required">
+                                    <label>Status</label>
+                                    <select  class="form-control">
+                                        <option value="">Select Status</option>
+                                        <option value="1">Active</option>
+                                        <option value="0">Inactive</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div pg-form-group class="form-group form-group-default">
+                                    <input type="submit" class="btn btn-primary" value="Update" >
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <!-- END PANEL -->
+        </div>
+
+    </div>
+</div>
+<!-- END CONTAINER FLUID -->

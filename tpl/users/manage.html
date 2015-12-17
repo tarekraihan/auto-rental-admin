@@ -1,0 +1,174 @@
+<!-- START CONTAINER FLUID -->
+<div class="container-fluid container-fixed-lg bg-white">
+    <div class="well notice">
+        <a href=""><i class="fa fa-close pull-right"></i></a>
+        <p><h4><i class="fa fa-info-circle "></i>Users</h4>
+        Add / Manage system user. You can add ultimate number of users.You can set User as inactive if you wish to restrict their access to the system without deleting the user.</p>
+
+    </div>
+    <!-- START PANEL -->
+    <div class="panel panel-transparent" ng-controller="TableWithSearchCtrl">
+        <div class="panel-heading">
+            <div class="panel-title">
+                <h2>Manage Users</h2>
+            </div>
+            <div class="pull-right">
+                <div class="col-xs-12">
+                    <input type="text" id="search-table" class="form-control pull-right" placeholder="Search" ng-keyup="filter($event)">
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="panel-body">
+            <table class="table table-hover demo-table-search" id="tableWithSearch" ui-jq="dataTable" ui-options="options">
+                <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Registration DateTime</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Edit</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <p>Tarek Raihan</p>
+                    </td>
+                    <td class="v-align-middle">tarek@springrainit.com</td>
+                    <td class="v-align-middle">
+                        14-12-2015 10:30:00AM
+                    </td>
+                    <td class="v-align-middle">
+                        <a href="" class="btn btn-success">User</a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a href="" class="btn btn-success">Active</a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="app.users.edit"><i class="fa fa-edit"></i></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <p>Tarek Raihan</p>
+                    </td>
+                    <td class="v-align-middle">tarek@springrainit.com</td>
+                    <td class="v-align-middle">
+                        14-12-2015 10:30:00AM
+                    </td>
+                    <td class="v-align-middle">
+                        <a href="" class="btn btn-success">User</a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a href="" class="btn btn-success">Active</a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="app.users.edit"><i class="fa fa-edit"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <p>Tarek Raihan</p>
+                    </td>
+                    <td class="v-align-middle">tarek@springrainit.com</td>
+                    <td class="v-align-middle">
+                        14-12-2015 10:30:00AM
+                    </td>
+                    <td class="v-align-middle">
+                        <a href="" class="btn btn-success">User</a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a href="" class="btn btn-success">Active</a>
+                    </td>
+                    <td class="v-align-middle" >
+                        <a ui-sref="app.users.edit"><i class="fa fa-edit"></i></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <p>Tarek Raihan</p>
+                    </td>
+                    <td class="v-align-middle">tarek@springrainit.com</td>
+                    <td class="v-align-middle">
+                        14-12-2015 10:30:00AM
+                    </td>
+                    <td class="v-align-middle">
+                        <a href="" class="btn btn-success">Super Admin</a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a href="" class="btn btn-success">Active</a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="app.users.edit"><i class="fa fa-edit"></i></a>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <p>Tarek Raihan</p>
+                    </td>
+                    <td class="v-align-middle">tarek@springrainit.com</td>
+                    <td class="v-align-middle">
+                        14-12-2015 10:30:00AM
+                    </td>
+                    <td class="v-align-middle">
+                        <a href="" class="btn btn-success">Admin</a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a href="" class="btn btn-success">Active</a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="app.users.edit"><i class="fa fa-edit"></i></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="v-align-middle">
+                        <input type="checkbox">
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                        <p>Tarek Raihan</p>
+                    </td>
+                    <td class="v-align-middle">tarek@springrainit.com</td>
+                    <td class="v-align-middle">
+                        14-12-2015 10:30:00AM
+                    </td>
+                    <td class="v-align-middle">
+                        <a href="" class="btn btn-success">Admin</a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a href="" class="btn btn-success">Active</a>
+                    </td>
+                    <td class="v-align-middle">
+                        <a ui-sref="app.users.edit"><i class="fa fa-edit"></i></a>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- END PANEL -->
+</div>
+<!-- END CONTAINER FLUID -->
